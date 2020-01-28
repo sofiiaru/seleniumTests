@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
         features = {"classpath:features/expedia"},
         glue = {"step_defs"},
         //tags = "@expedia",
-        dryRun = true)
+        dryRun = false)
 public class CucumberRunner {
 }
