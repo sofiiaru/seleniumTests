@@ -1,2 +1,6 @@
 tests/ChromeTest2.class
+tests/SmokeTest.class
+step_defs/MyStepdefs.class
 tests/ChromeTest.class
+tests/ExpediaTest.class
+tests/TestActionsClass.class
