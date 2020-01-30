@@ -4,6 +4,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"pretty",
+        "html:target/default-cucumber-reports"},
         features = {"classpath:features/expedia"},
         glue = {"step_defs"},
         //tags = "@expedia",

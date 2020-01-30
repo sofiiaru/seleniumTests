@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import utilities.ConfigReader;
+import utilities.EnvironmentManager;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -21,7 +22,7 @@ public class ExpediaNewWindowVerificationSteps {
     @Given("^the user is on the main expedia page$")
     public void the_user_is_on_the_main_expedia_page() throws Throwable {
         driver = Driver.getDriver();
-        driver.get(ConfigReader.getProperty("baseUrl"));
+        driver.get(EnvironmentManager.url);
     }
 
     @When("^the user clicks on 'list your property button'$")
@@ -53,6 +54,7 @@ public class ExpediaNewWindowVerificationSteps {
         //div[@id='calc-data']//h2
         WebElement earnings = driver.findElement(By.xpath("//div[@id='calc-data']//h2"));
         Assert.assertTrue(earnings.isDisplayed());
+        Assert.assertTrue("This is me failing the test",false);
     }
 
 
